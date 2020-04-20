@@ -14,10 +14,10 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1587362029,,"q"
 :wq
-|2,0,1587352913,,"wq"
+|2,0,1587365168,,"wq"
+:q
+|2,0,1587365166,,"q"
 :qa!
 |2,0,1587147697,,"qa!"
 :q!
@@ -35,7 +35,7 @@ $
 
 # Search String History (newest to oldest):
 ? @$
-|2,1,1587361926,,"@$"
+|2,1,1587365142,,"@$"
 
 # Expression History (newest to oldest):
 
@@ -48,7 +48,7 @@ $
 # Registers:
 ""0	CHAR	0
 	 ansible_host=ec2-34-238-247-88.compute-1.amazonaws.com
-|3,1,0,0,1,0,1587361926," ansible_host=ec2-34-238-247-88.compute-1.amazonaws.com"
+|3,1,0,0,1,0,1587365142," ansible_host=ec2-34-238-247-88.compute-1.amazonaws.com"
 "1	LINE	0
 	2827
 <ddddddd                                                                                                        tasks:                                                                                                                                                                                                                                                                                                                                                - name: Lookup hashicorp secret                                                                                                                                           debug:                                                                                                                                                                      msg: "{{ lookup('hashi_vault', 'secret=secret/hello:hello token=s.L807iqYlB7uyMwuxwsPH5DUM url=http://ec2-3-88-168-236.compute-1.amazonaws.com:8200')}}"                                                                                                                                                                                  - name: Lookup hashicorp ssh                                                                                                                                              debug:                                                                                                                                                                      msg: "{{ lookup('hashi_vault', 'secret=ssh/roles/lowks token=s.L807iqYlB7uyMwuxwsPH5DUM url=http://ec2-3-88-168-236.compute-1.amazonaws.com:8200')}}"                                                                                                                                                                                     - name: Lookup password using username from vault                                                                                                                         debug:                                                                                                                                                                      msg: "{{ lookup('hashi_vault', 'secret=secret/login:username token=s.L807iqYlB7uyMwuxwsPH5DUM url=http://ec2-3-88-168-236.compute-1.amazonaws.com:8200')}}"                                                                                                                                                                                 tags:                                                                                                                                                                       - demo                                                                                                                                                                               
@@ -163,6 +163,9 @@ $
 |3,0,5,0,44,0,1587134389,"# This is the default ansible 'hosts' file.","#","# It should live in /etc/ansible/hosts","#","#   - Comments begin with the '#' character","#   - Blank lines are ignored","#   - Groups of hosts are delimited by [header] elements","#   - You can enter hostnames or ip addresses","#   - A hostname/ip can be a member of multiple groups","","# Ex 1: Ungrouped hosts, specify before any group headers.","","## green.example.com",>21
 |<"## blue.example.com","## 192.168.100.1","## 192.168.100.10","","# Ex 2: A collection of hosts belonging to the 'webservers' group","","## [webservers]","## alpha.example.org","## beta.example.org","## 192.168.1.100","## 192.168.1.110","","# If you have multiple hosts following a pattern you can specify","# them like this:","","## www[001:006].example.com","","# Ex 3: A collection of database servers in the 'dbservers' group","","## [dbservers]","## ","## db01.intranet.mydomain.net",>31
 |<"## db02.intranet.mydomain.net","## 10.25.1.56","## 10.25.1.57","","# Here's another example of host ranges, this time there are no","# leading 0s:","","## db-[99:101]-node.example.com",""
+"l	CHAR	0
+	€kb€kbL
+|3,0,21,0,1,0,1587364819,"€kb€kbL"
 "w	CHAR	0
 	ewsadsauuu
 |3,0,32,0,1,0,1587147643,"ewsadsauuu"
@@ -171,263 +174,241 @@ $
 |3,0,36,2,1,8,1587361883,"pulse/   "
 
 # File marks:
-'0  12  25  /etc/ansible/ansible.cfg
-|4,48,12,25,1587362029,"/etc/ansible/ansible.cfg"
-'1  8  0  ~/.config
-|4,49,8,0,1587361928,"~/.config"
-'2  8  0  ~/.ansible
-|4,50,8,0,1587361862,"~/.ansible"
-'3  10  0  ~/.config
-|4,51,10,0,1587361807,"~/.config"
-'4  14  0  /etc/ansible/ansible.cfg
-|4,52,14,0,1587361742,"/etc/ansible/ansible.cfg"
-'5  3  29  /etc/ansible/hosts
-|4,53,3,29,1587352913,"/etc/ansible/hosts"
-'6  3  83  /etc/ansible/hosts
-|4,54,3,83,1587279527,"/etc/ansible/hosts"
-'7  3  83  /etc/ansible/hosts
-|4,55,3,83,1587279048,"/etc/ansible/hosts"
-'8  3  83  /etc/ansible/hosts
-|4,56,3,83,1587279048,"/etc/ansible/hosts"
-'9  3  28  /etc/ansible/hosts
-|4,57,3,28,1587278994,"/etc/ansible/hosts"
+'0  3  22  ~/.gitconfig
+|4,48,3,22,1587365168,"~/.gitconfig"
+'1  8  0  ~/.git
+|4,49,8,0,1587365144,"~/.git"
+'2  20  0  ~/.git
+|4,50,20,0,1587364839,"~/.git"
+'3  17  132  /etc/ansible/playbook.yml
+|4,51,17,132,1587363118,"/etc/ansible/playbook.yml"
+'4  3  0  /etc/ansible/hosts
+|4,52,3,0,1587362527,"/etc/ansible/hosts"
+'5  12  25  /etc/ansible/ansible.cfg
+|4,53,12,25,1587362029,"/etc/ansible/ansible.cfg"
+'6  8  0  ~/.config
+|4,54,8,0,1587361928,"~/.config"
+'7  8  0  ~/.ansible
+|4,55,8,0,1587361862,"~/.ansible"
+'8  10  0  ~/.config
+|4,56,10,0,1587361807,"~/.config"
 
 # Jumplist (newest first):
+-'  3  22  ~/.gitconfig
+|4,39,3,22,1587365168,"~/.gitconfig"
+-'  8  0  ~/.git
+|4,39,8,0,1587365144,"~/.git"
+-'  8  0  ~/.git
+|4,39,8,0,1587365144,"~/.git"
+-'  20  0  ~/.git
+|4,39,20,0,1587364839,"~/.git"
+-'  20  0  ~/.git
+|4,39,20,0,1587364839,"~/.git"
+-'  3  1  ~/.gitconfig
+|4,39,3,1,1587364822,"~/.gitconfig"
+-'  3  1  ~/.gitconfig
+|4,39,3,1,1587364822,"~/.gitconfig"
+-'  3  1  ~/.gitconfig
+|4,39,3,1,1587364822,"~/.gitconfig"
+-'  3  1  ~/.gitconfig
+|4,39,3,1,1587364822,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1587364818,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1587364818,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1587364818,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1587364818,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1587364818,"~/.gitconfig"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  17  132  /etc/ansible/playbook.yml
+|4,39,17,132,1587363118,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  19  5  /etc/ansible/playbook.yml
+|4,39,19,5,1587363014,"/etc/ansible/playbook.yml"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
+-'  3  0  /etc/ansible/hosts
+|4,39,3,0,1587362527,"/etc/ansible/hosts"
 -'  12  25  /etc/ansible/ansible.cfg
 |4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
--'  14  0  /etc/ansible/ansible.cfg
-|4,39,14,0,1587361960,"/etc/ansible/ansible.cfg"
--'  8  0  ~/.config
-|4,39,8,0,1587361928,"~/.config"
--'  8  0  ~/.config
-|4,39,8,0,1587361928,"~/.config"
--'  1  0  ~/.config
-|4,39,1,0,1587361884,"~/.config"
--'  1  0  ~/.config
-|4,39,1,0,1587361884,"~/.config"
--'  8  0  ~/.ansible
-|4,39,8,0,1587361862,"~/.ansible"
--'  8  0  ~/.ansible
-|4,39,8,0,1587361862,"~/.ansible"
--'  8  0  ~/.ansible
-|4,39,8,0,1587361862,"~/.ansible"
--'  8  0  ~/.ansible
-|4,39,8,0,1587361862,"~/.ansible"
--'  10  0  ~/.config
-|4,39,10,0,1587361807,"~/.config"
--'  10  0  ~/.config
-|4,39,10,0,1587361807,"~/.config"
--'  10  0  ~/.config
-|4,39,10,0,1587361807,"~/.config"
--'  10  0  ~/.config
-|4,39,10,0,1587361807,"~/.config"
--'  1  0  ~/.config
-|4,39,1,0,1587361794,"~/.config"
--'  1  0  ~/.config
-|4,39,1,0,1587361794,"~/.config"
--'  1  0  ~/.config
-|4,39,1,0,1587361794,"~/.config"
--'  1  0  ~/.config
-|4,39,1,0,1587361794,"~/.config"
--'  14  0  /etc/ansible/ansible.cfg
-|4,39,14,0,1587361742,"/etc/ansible/ansible.cfg"
--'  14  0  /etc/ansible/ansible.cfg
-|4,39,14,0,1587361742,"/etc/ansible/ansible.cfg"
--'  14  0  /etc/ansible/ansible.cfg
-|4,39,14,0,1587361742,"/etc/ansible/ansible.cfg"
--'  14  0  /etc/ansible/ansible.cfg
-|4,39,14,0,1587361742,"/etc/ansible/ansible.cfg"
--'  14  0  /etc/ansible/ansible.cfg
-|4,39,14,0,1587361742,"/etc/ansible/ansible.cfg"
--'  14  0  /etc/ansible/ansible.cfg
-|4,39,14,0,1587361742,"/etc/ansible/ansible.cfg"
--'  14  0  /etc/ansible/ansible.cfg
-|4,39,14,0,1587361742,"/etc/ansible/ansible.cfg"
--'  14  0  /etc/ansible/ansible.cfg
-|4,39,14,0,1587361742,"/etc/ansible/ansible.cfg"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  29  /etc/ansible/hosts
-|4,39,3,29,1587352913,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279527,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279048,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279048,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279048,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279048,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279048,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279048,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279048,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279048,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279048,"/etc/ansible/hosts"
--'  3  83  /etc/ansible/hosts
-|4,39,3,83,1587279048,"/etc/ansible/hosts"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
+-'  12  25  /etc/ansible/ansible.cfg
+|4,39,12,25,1587362029,"/etc/ansible/ansible.cfg"
 
 # History of marks within files (newest to oldest):
 
-> /etc/ansible/ansible.cfg
-	*	1587362027	0
-	"	12	25
-	^	14	0
-	.	14	0
-	+	14	0
-
-> /usr/share/vim/vim80/doc/help.txt
-	*	1587361925	0
-	"	126	0
-
-> /usr/share/vim/vim80/doc/pi_netrw.txt
-	*	1587361892	0
-	"	1045	16
-
-> /etc/ansible/hosts
-	*	1587352911	0
-	"	3	29
-	^	3	84
-	.	3	29
-	+	1	0
-	+	1	3
-	+	1	5
-	+	3	50
-	+	1	5
-	+	3	29
+> ~/.gitconfig
+	*	1587365166	0
+	"	3	22
+	^	3	23
+	.	3	23
+	+	3	23
 
 > /etc/ansible/playbook.yml
-	*	1587147971	0
-	"	19	5
-	^	19	6
-	.	19	6
+	*	1587363116	0
+	"	17	132
+	^	17	133
+	.	17	132
 	+	1	0
 	+	1	3
 	+	17	0
@@ -473,6 +454,36 @@ $
 	+	17	5
 	+	18	6
 	+	19	6
+	+	9	118
+	+	13	126
+	+	17	132
+
+> /etc/ansible/hosts
+	*	1587362526	0
+	"	3	0
+	^	3	84
+	.	3	29
+	+	1	0
+	+	1	3
+	+	1	5
+	+	3	50
+	+	1	5
+	+	3	29
+
+> /etc/ansible/ansible.cfg
+	*	1587362027	0
+	"	12	25
+	^	14	0
+	.	14	0
+	+	14	0
+
+> /usr/share/vim/vim80/doc/help.txt
+	*	1587361925	0
+	"	126	0
+
+> /usr/share/vim/vim80/doc/pi_netrw.txt
+	*	1587361892	0
+	"	1045	16
 
 > /etc/ansible/utils/hosts
 	*	1587134633	0
