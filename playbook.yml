@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: true
+  gather_facts: false
+  tasks:
+
+      - name: Lookup hashicorp secret
+        debug:
+           msg: "{{ lookup('hashi_vault', 'secret=secret/hello:hello token=s.L807iqYlB7uyMwuxwsPH5DUM url=http://ec2-18-212-191-83.compute-1.amazonaws.com:8200')}}"
+
+      - name: Lookup hashicorp ssh
+        debug:
+           msg: "{{ lookup('hashi_vault', 'secret=ssh/roles/lowks token=s.L807iqYlB7uyMwuxwsPH5DUM url=http://ec2-18-212-191-83.compute-1.amazonaws.com:8200')}}"
+
+      - name: Lookup password using username from vault
+        debug:
+           msg: "{{ lookup('hashi_vault', 'secret=secret/login:username token=s.L807iqYlB7uyMwuxwsPH5DUM url=http://ec2-18-212-191-83.compute-1.amazonaws.com:8200')}}"
+        tags:
+            - demo
+                                                                                                                                                          
